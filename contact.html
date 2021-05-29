@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Contactformulier </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header class="black_border">
+        <h1> Contacten </h1>
+    </header>
+    <main>
+
+        <!--Als je met netlify werkt dan moet je altijd element name in je input tag zetten.
+            Wil je styling toevoegen aan je form dan kan je styling geven aan de input-tags:  .input(){}
+            of een class toevoegen aan de input-tags:  <input class="input-name" type="text"  -->
+
+        <form name="contactlijst" method="POST" data-netlify="true">
+            <p>
+                <label>Naam: <br><input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Email: <br><input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Telefoonnummer: <br><input type="tel" name="tel" value="06-12345678" /></label>
+            </p>
+            <p>
+                <label>Leeftijd: <br><input type="number" id="age" name="age" min="1" max="130"></label>
+            </p>
+            <p>
+                <label>Geboortedatum: <br><input type="date" name="date" /></label>
+            </p>
+
+            <p>
+                <label>Geslacht: </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+            <p>
+                <label>Favoriete cuisine: </label><br>
+                <input type="checkbox" id="cuisine1" name="cuisine1" value="frans">
+                <label for="cuisine1"> Frans</label><br>
+                <input type="checkbox" id="cuisine2" name="cuisine2" value="italiaans">
+                <label for="cuisine2"> Italiaans</label><br>
+                <input type="checkbox" id="cuisine3" name="cuisine3" value="Spaans">
+                <label for="vehicle3"> Spaans</label><br>
+                <input type="checkbox" id="cuisine4" name="cuisine4" value="Arabisch">
+                <label for="vehicle4"> Arabisch </label><br>
+            </p>
+            <p>
+                <label> Favoriete kleur: </label><br>
+                <input type="color" name="color">
+            </p>
+            <p>
+                <label>Biografie: <br><textarea name="Biografie">
+                </textarea></label>
+            </p>
+            <p>
+                <label>Upload je laatste recept: </label><br>
+                <input type="file">
+            </p>
+            <p>
+                <label>Url naar je recepten website: </label><br>
+                <input type="url" id="homepage" name="homepage"><br><br>
+            </p>
+
+
+            <br><button type="reset">Reset</button> <button type="submit">Send</button>
+            </p>
+
+
+            <br>
+        </form>
+
+    </main>
+
+    <br>
+
+    <nav>
+        <a href="index.html"> Back to homepage </a>
+    </nav>
+
+    <br>
+
+    <div id="footer_background">
+        <footer>
+            Copyright
+        </footer>
+    </div>
+</body>
+
+</html>
